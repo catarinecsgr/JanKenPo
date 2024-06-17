@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="JanKenPo.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:JanKenPo.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Title="JanKenPo">
+
+    <TabBar>
+        <ShellContent
+            Title="Jan Ken Po"
+            ContentTemplate="{DataTemplate local:PlayView}"
+            Route="Play" />
+
+        <ShellContent 
+            Title="Sobre"
+            ContentTemplate="{DataTemplate local:AboutView}"
+            Route="About" />
+    </TabBar>
+
+</Shell>
